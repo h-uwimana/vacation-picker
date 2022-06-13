@@ -13,8 +13,9 @@
 				:key="index"
 				:id="country.id"
 				:title="country.details"
+				class="list-group-item backgroundImg"
 			>
-				<li class="list-group-item d-flex justify-content-between">
+				<li class="d-flex justify-content-between">
 					<div class="justify-content-start">{{ index + 1 }}</div>
 					<div class="text-center">{{ country.name }} </div>
 					<span class="badge bg-black"
@@ -61,7 +62,7 @@
 </script>
 
 <style scoped>
-	li:hover {
+	.backgroundImg:hover {
 		transition: 0.6s ease-in-out;
 		background-color: blue;
 		color: white;
